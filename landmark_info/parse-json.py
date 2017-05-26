@@ -2,10 +2,11 @@ import json
 
 data = {'name':'', 'service':[], 'rating':0}
 
-data['name'] = 'Nhà Thờ Đức Bà'
-data['service'].append({'id':1, 'type':"Thông tin chi tiết", 'content':'http://www.vietnamtourism.com/index.php/tourism/items/270', 'icon_id':1})
-data['rating'] = 4.5
-with open('nha_tho_duc_ba.json', 'w') as fp:
+data['name'] = 'Nhà hàng 3 lá chay'
+data['service'].append({'id':1, 'type':"Thông tin chi tiết", 'content':'http://3lachay.com/', 'icon_id':1})
+data['service'].append({'id':1, 'type':"Sự kiện", 'content':'http://3lachay.com/?page_id=122', 'icon_id':5})
+data['rating'] = 4.1
+with open('nha_hang_3_la_chay.json', 'w') as fp:
     json.dump(data, fp, ensure_ascii=False)
 
 '''
