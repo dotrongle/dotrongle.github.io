@@ -2,13 +2,12 @@ import json
 
 data = {'name':'', 'service':[], 'rating':0}
 
-data['name'] = 'Nhà Hàng Mộc Riêu Nướng'
-data['service'].append({'id':1, 'type':"Thông tin chi tiết", 'content':'http://www.mocquan.vn/', 'icon_id':1})
-data['service'].append({'id':1, 'type':"Đặt bàn", 'content':'http://www.mocquan.vn/lien-he.html', 'icon_id':3})
-data['service'].append({'id':1, 'type':"Sự kiện", 'content':'http://www.mocquan.vn/blog', 'icon_id':5})
-data['service'].append({'id':2, 'type':'phone number', 'content':'0838364968', 'icon_id':7})
-data['rating'] = 4.0
-with open('nha_hang_moc_rieu_nuong.json', 'w') as fp:
+data['name'] = 'Công viên văn hóa Đầm Sen'
+data['service'].append({'id':1, 'type':"Thông tin chi tiết", 'content':'http://damsenpark.com.vn/', 'icon_id':1})
+data['service'].append({'id':1, 'type':"Sự kiện", 'content':'http://damsenpark.com.vn/hoat-dong/su-kien_1', 'icon_id':5})
+data['service'].append({'id':1, 'type':"Khuyến mãi", 'content':'http://damsenpark.com.vn/hoat-dong/khuyen-mai_5', 'icon_id':6})
+data['rating'] = 4.3
+with open('cong_vien_dam_sen.json', 'w') as fp:
     json.dump(data, fp, ensure_ascii=False)
 
 '''
