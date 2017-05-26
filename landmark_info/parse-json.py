@@ -2,12 +2,10 @@ import json
 
 data = {'name':'', 'service':[], 'rating':0}
 
-data['name'] = 'Công viên văn hóa Đầm Sen'
-data['service'].append({'id':1, 'type':"Thông tin chi tiết", 'content':'http://damsenpark.com.vn/', 'icon_id':1})
-data['service'].append({'id':1, 'type':"Sự kiện", 'content':'http://damsenpark.com.vn/hoat-dong/su-kien_1', 'icon_id':5})
-data['service'].append({'id':1, 'type':"Khuyến mãi", 'content':'http://damsenpark.com.vn/hoat-dong/khuyen-mai_5', 'icon_id':6})
-data['rating'] = 4.3
-with open('cong_vien_dam_sen.json', 'w') as fp:
+data['name'] = 'Nhà Thờ Đức Bà'
+data['service'].append({'id':1, 'type':"Thông tin chi tiết", 'content':'http://www.vietnamtourism.com/index.php/tourism/items/270', 'icon_id':1})
+data['rating'] = 4.5
+with open('nha_tho_duc_ba.json', 'w') as fp:
     json.dump(data, fp, ensure_ascii=False)
 
 '''
