@@ -2,12 +2,12 @@ import json
 
 data = {'name':'', 'service':[], 'rating':0}
 
-data['name'] = 'Lotte cinema Nowzone'
-data['service'].append({'id':1, 'type':"Thông tin chi tiết", 'content':'https://lottecinemavn.com/vi-vn/rap-phim/ho-chi-minh/nowzone.aspx', 'icon_id':1})
-data['service'].append({'id':1, 'type':"Đặt vé", 'content':'https://lottecinemavn.com/vi-vn/buoc-1.aspx', 'icon_id':2})
-data['service'].append({'id':1, 'type':"Khuyến mãi", 'content':'https://lottecinemavn.com/vi-vn/su-kien/all.aspx', 'icon_id':6})
-data['rating'] = 4.2
-with open('lotte_cinema_nowzone.json', 'w') as fp:
+data['name'] = 'Kim O Long'
+data['service'].append({'id':1, 'type':"Thông tin chi tiết", 'content':'http://kimolong.com/', 'icon_id':1})
+data['service'].append({'id':1, 'type':"Sự kiện", 'content':'http://kimolong.com/tin-tuc/', 'icon_id':5})
+data['service'].append({'id':1, 'type':"Khuyến mãi", 'content':'http://kimolong.com/product-category/combo/', 'icon_id':6})
+data['rating'] = 4.5
+with open('kim_o_long.json', 'w') as fp:
     json.dump(data, fp, ensure_ascii=False)
 
 '''
