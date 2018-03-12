@@ -3,11 +3,11 @@ from os import listdir
 from os.path import isfile
 from os.path import join
 import os
-for adir in ['bana']:
+for adir in ['danang_center']:
     data = list()   
     if isfile(adir):
         continue
-    os.mkdir('../landmark_gallery_info/' + adir)
+    #os.mkdir('../landmark_gallery_info/' + adir)
     with open('../landmark_gallery_info/' + adir+'.json', 'w') as outfile:
         for im in listdir(join('.',adir)):
             dim = dict()
